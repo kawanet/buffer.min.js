@@ -1,2 +1,7 @@
 # buffer.min.js
-Standalone Node.js Buffer Minified for Browsers
+
+Minified standalone buffer module from node.js, for the browser.
+
+## Original
+
+[https://github.com/feross/buffer](https://github.com/feross/buffer)

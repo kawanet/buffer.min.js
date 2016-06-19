@@ -1,6 +1,6 @@
 {
   "name": "buffer.min.js",
-  "description": "Standalone Node.js Buffer Minified for Browsers",
+  "description": "Minified standalone buffer module from node.js, for the browser.",
   "version": "4.6.0",
   "author": "@kawanet",
   "bugs": {
