@@ -1,0 +1,33 @@
+{
+  "name": "buffer.min.js",
+  "description": "Standalone Node.js Buffer Minified for Browsers",
+  "version": "4.6.0",
+  "author": "@kawanet",
+  "bugs": {
+    "url": "https://github.com/kawanet/buffer.min.js/issues"
+  },
+  "dependencies": {
+    "buffer": "^4.6.0"
+  },
+  "devDependencies": {
+    "uglify-js": "^2.6.2",
+    "webpack": "^1.13.1"
+  },
+  "homepage": "https://github.com/kawanet/buffer.min.js#readme",
+  "keywords": [
+    "browserify",
+    "buffer",
+    "webpack"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kawanet/buffer.min.js.git"
+  },
+  "scripts": {
+    "buffer-version": "node -e \"console.warn(require('buffer/package.json').version)\"",
+    "build": "find node_modules/webpack -type d -name buffer | xargs rm -fr && ./node_modules/.bin/webpack --optimize-minimize --output-library=Buffer --output-library-target=this index.js buffer.min.js",
+    "fixpack": "fixpack"
+  }
+}
